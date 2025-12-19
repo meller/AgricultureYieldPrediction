@@ -6,6 +6,8 @@ venv/
 env/
 ENV/
 .venv/
+.venv-windows/
+venv-windows/
 
 # Python cache
 __pycache__/
@@ -46,6 +48,8 @@ wheels/
 
 # Data files (if you don't want to track datasets)
 *.csv
+# Keep project dataset tracked
+!yield_data.csv
 *.xlsx
 *.xls
 data/

@@ -7,6 +7,12 @@
 source venv/bin/activate
 ```
 
+```powershell
+# On Windows (creates a Windows-specific env and installs deps)
+.\scripts\windows\setup.ps1
+.\.venv-windows\Scripts\Activate.ps1
+```
+
 ### Step 2: Run the App
 ```bash
 streamlit run app.py

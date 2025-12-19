@@ -48,16 +48,20 @@ This demo demonstrates three key concepts through a **"Wow Moment"** interactive
 
 2. **Activate virtual environment:**
    ```bash
-   # On Linux/Mac
+   # On Linux/Mac (uses the existing venv/)
    source venv/bin/activate
+   ```
 
-   # On Windows
-   venv\Scripts\activate
+   ```powershell
+   # On Windows (creates a Windows-safe env at .venv-windows/)
+   .\scripts\windows\setup.ps1
+   .\.venv-windows\Scripts\Activate.ps1
    ```
 
 3. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
+   # (Skip this on Windows if you just ran scripts/windows/setup.ps1)
    ```
 
 4. **Run the Streamlit app:**
